@@ -1,0 +1,122 @@
+html, body {
+    background-color: #0d192b;
+    color: #8bacda;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+    padding-top: 15px
+}
+
+.card {
+    width: 350px;
+    padding: 24px;
+    border-radius: 15px;
+    margin: 0 auto;
+    background-color: #14253d;
+    box-shadow: 0 10px 20px rgb(0 0 0 / 30%);
+}
+
+hr {
+    border: 1px solid gray;
+}
+
+.card h1 {
+    color: white;
+    font-size: 1em;
+    
+}
+
+.card h1:hover {
+    color: #00fff7;
+    cursor: pointer;
+}
+
+.text {
+    margin: 16px 0;
+}
+
+.heroImage {
+   max-width: 100%; 
+   border-radius: 15px;
+}
+
+.card-img__holder {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border-radius: 10px;
+    caret-color: transparent;
+    font-size: 0;
+    line-height: 0;
+}
+
+.card-img__overlap {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 255, 247, 0.5);
+    opacity: 0;
+    transition: all 0.3s ease-out;
+}
+
+.card-img__holder:hover .card-img__overlap {
+    opacity: 1;
+  }
+
+.special {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+}
+
+.special__price {
+    /* display: flex; */
+    color: #00fff7;
+    font-weight: 600;
+}
+
+.special__price img {
+    display: inline;
+}
+
+.special__price p {
+    display: inline;
+}
+
+.special__time img {
+    display: inline;
+}
+
+.special__time p {
+    display: inline;
+}
+
+
+
+.author {
+    display: flex;
+    align-items: center;
+}
+
+.author__photo {
+  width: 32px;
+  height: 32px;
+  margin-right: 15px;
+  border-radius: 50%;
+  border: 1px solid white;
+
+}
+
+.author a {
+    text-decoration: none;
+    color: white;
+}
+
+.author a:hover {
+    color: #00fff7;
+}
